@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrinquedIn</title>
+    <title>Brinquedin - Diversão Garantida</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header__logo">
+            <h1>Brinquedin</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#inicio" class="nav__link" id="link-inicio">Início</a></li>
+                <li class="nav__item"><a href="#categorias" class="nav__link" id="link-categorias">Categorias</a></li>
+                <li class="nav__item"><a href="#promocoes" class="nav__link" id="link-promocoes">Promoções</a></li>
+                <li class="nav__item"><a href="#contato" class="nav__link" id="link-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <!-- Seção Início -->
+        <section id="inicio" class="section hero">
+            <div class="container">
+                <h2 class="hero__title">Bem-vindo à Brinquedin</h2>
+                <p class="hero__subtitle">O paraíso dos brinquedos em um só lugar.</p>
+                <div class="hero__banner">
+                    <img src="https://via.placeholder.com" alt="Banner Brinquedin" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Categorias -->
+        <section id="categorias" class="section categories">
+            <div class="container">
+                <h2 class="section__title">Categorias</h2>
+                <div class="categories__grid">
+                    <article class="category-card">Jogos de Tabuleiro</article>
+                    <article class="category-card">Bonecas e Bonecos</article>
+                    <article class="category-card">Blocos de Montar</article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Promoções -->
+        <section id="promocoes" class="section offers">
+            <div class="container">
+                <h2 class="section__title">Promoções</h2>
+                <div class="offers__container">
+                    <div class="offer-item">
+                        <p class="offer-item__text">Carrinho de Controle - <strong class="price">R$ 99,00</strong></p>
+                    </div>
+                    <div class="offer-item">
+                        <p class="offer-item__text">Urso Gigante - <strong class="price">R$ 150,00</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section contact">
+            <div class="container">
+                <h2 class="section__title">Contato</h2>
+                <form id="form-contato" class="contact__form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Seu Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-textarea" placeholder="Sua dúvida"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2026 - Loja de Brinquedos</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
